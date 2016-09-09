@@ -1,14 +1,47 @@
 body{
   margin: 0;
-  background-image: url(../img/background.jpg);
+  font-family: sans-serif;
 }
 header{
   color: white;
+  height: 500px;
+  background-image: url(../img/background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+ul, h1{
+  margin: 0;
+  display: inline-block;
+}
+h1{
+  font-size: 50px;
+  letter-spacing: -4px;
 }
 header ul li{
     display: inline-block;
+    /*padding: 20px 0;*/
+    line-height: 50px;
+    padding: 0 20px;
+    margin-left: 10px;
 }
-header a{
+ul{
+  float: right;
+}
+h1 a{
   text-decoration: none;
-  color: white;
+  color: inherit;
+}
+span{
+  color: hsl(184,84%,66%);
+}
+ul li:hover{
+  cursor: pointer;
+}
+ul li:hover, .active{
+  background-color: hsl(184,84%,66%);
+  /*border-radius: 30px 20%;*/
+  border-top-right-radius: 20px 50%;
+  border-bottom-right-radius: 20px 50%;
+  border-top-left-radius: 20px 50%;
+  border-bottom-left-radius: 20px 50%;
 }
