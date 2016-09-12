@@ -1,0 +1,15 @@
+body{
+  margin: 0;
+}
+header{
+  margin: 0;
+  display: inline-block;
+}
+h1 img{
+  width: 10px;
+  height: 10px;
+}
+header a{
+  text-decoration: none;
+
+}

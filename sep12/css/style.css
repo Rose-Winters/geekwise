@@ -1,0 +1,52 @@
+body{
+  margin: 0;
+}
+header{
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  background-color: hsl(291, 38%, 61%);
+}
+header a, ul li{
+  margin: 0;
+}
+h1 img{
+  width: 50px;
+  height: 50px;
+  margin: 0;
+}
+header nav ul li{
+  float: right;
+  display: inline-block;
+  padding: 10px;
+}
+header a{
+  text-decoration: none;
+  color: black;
+}
+article h2{
+  background-color: rgb(42, 212, 105);
+  margin: 0;
+  width: 75%;
+  float: left;
+  padding: 50px;
+}
+article div:nth-of-type(1){
+  background-color: rgb(84, 9, 115);
+  width: 50%;
+  margin: 0;
+  float: left;
+}
+article div:nth-of-type(2){
+  width: 25%;
+float: left;
+background-color: rgb(30, 156, 184);
+}
+aside ul li{
+  float: right;
+}
+section:nth-of-type(2) div{
+  width: 25%;
+  display: inline-block;
+  float: left;
+}
