@@ -1,0 +1,16 @@
+section{
+  padding: 0 10%;
+}
+div.divparent{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+
+}
+.divparent div{
+  flex: 50%;
+}
+.divparent img{
+  float: left;
+  border-radius: 100%;
+}
