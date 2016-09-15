@@ -1,0 +1,16 @@
+body{
+  margin: 0;
+}
+div.divparent{
+  display:flex;
+  flex-wrap: wrap;
+}
+div.divparent div.biggerimg, div.divparent div.smallerimg{
+  flex: 50%;
+}
+div.biggerimg img{
+  height: 300px;
+}
+div.smallerimg img{
+  height: 300px;
+}
