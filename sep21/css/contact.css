@@ -1,0 +1,86 @@
+body{
+  margin: 0;
+  font-style: sans-serif;
+}
+#contact{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+hr{
+  width: 5%;
+  border-color:hsl(278, 68%, 83%);
+}
+h3{
+  text-align: center;
+  font-size: 25px;
+  color: hsl(278, 68%, 43%);
+}
+.divparent{
+  display: flex;
+  margin-top: 70px;
+}
+address{
+  margin-right: 25px;
+}
+address h4{
+  margin: 0;
+  padding: 10px 0;
+  color: hsl(278, 68%, 43%);
+}
+address h4:nth-of-type(1){
+  margin-top: 0;
+}
+address a{
+  text-decoration:none;
+  color: hsl(278, 68%, 73%);
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+form div{
+  display: flex;
+}
+form input[type="text"]{
+  margin-right: 10px;
+}
+form input[type="text"],
+form input[type="email"]{
+flex: 1;
+}
+form textarea{
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  max-height: 300px;
+  min-height: 100px;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea{
+  border-style: none;
+  margin-bottom: 10px;
+  border-radius: 1px;
+  background-color: hsl(279, 100%, 95%);
+  color:hsl(278, 68%, 43%);
+}
+form input[placeholder="Name"],
+form input[placeholder="Email"],
+textarea [placeholder="Message"]{
+  text-indent: 10px;
+  color:hsl(278, 68%, 43%);
+}
+
+form input[type="submit"]{
+  align-self: flex-end;
+  border: none;
+  padding: 10px 15px;
+  background-color: hsl(278, 68%, 43%);
+  color: white;
+}
+img{
+  margin-top: 70px;
+  width: 100%;
+  height: 225px;
+}
