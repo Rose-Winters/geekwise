@@ -1,0 +1,34 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+body{
+    margin: 0;
+    padding: 0;
+}
+#pricing{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#plan{
+  display: flex;
+  flex-direction: row;
+}
+div.box{
+  border: 2px hsl(288, 54%, 46%) solid;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+div.box div {
+  padding: 25px 30px 25px 40px;
+}
+ul li{
+  
+  border-bottom: 2px hsl(288, 54%, 46%) solid;
+  padding-right: 40px;
+}
+div.box:nth-of-type(2) div{
+  background-color: hsl(280, 55%, 66%);
+}
+div.box div p{
+  margin: 0;
+}
