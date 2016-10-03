@@ -2,6 +2,10 @@
 body{
     margin: 0;
     padding: 0;
+    color: hsl(280, 72%, 65%);
+}
+hr{
+  width: 10%;
 }
 #pricing{
   display: flex;
@@ -18,17 +22,40 @@ div.box{
   margin-left: 5px;
   margin-right: 5px;
 }
-div.box div {
-  padding: 25px 30px 25px 40px;
+div.box div{
+  text-align: center;
+  border-bottom: 2px hsl(288, 54%, 46%) solid;
+}
+div.box div p:nth-last-of-type(2){
+  font-weight: bolder;
+  font-size: 35px;
+}
+div.box div p, div.box div div{
+  font-size: 25px;
+}
+div.box div div{
+  display: inline-block;
+  border: 2px  hsl(288, 54%, 46%) solid;
+  padding: 0 10px;
+  color: white;
+  background-color: hsl(288, 54%, 46%);
+  margin: 15px 0;
+
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 ul li{
-  
   border-bottom: 2px hsl(288, 54%, 46%) solid;
   padding-right: 40px;
 }
 div.box:nth-of-type(2) div{
-  background-color: hsl(280, 55%, 66%);
+  background-color: hsl(280, 45%, 86%);
+  border-bottom: 2px hsl(288, 54%, 46%) solid;
 }
 div.box div p{
   margin: 0;
+  padding: 10px 0;
 }

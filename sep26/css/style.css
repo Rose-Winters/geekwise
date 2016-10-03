@@ -1,0 +1,216 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+@import "https://fonts.googleapis.com/css?family=Roboto+Condensed:300";
+body{
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  padding: 10px 5px;
+
+}
+nav h1, .hover{
+  color: hsl(0, 0%, 23%);
+}
+nav ul{
+  display: flex;
+  list-style: none;
+}
+nav ul li{
+    padding: 6px 10px;
+}
+.hover:hover{
+  cursor: pointer;
+  color: hsl(217, 85%, 69%);
+}
+nav ul li:nth-of-type(5){
+  background-color: hsl(217, 85%, 69%);
+  color: white;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+nav ul li:nth-of-type(5):hover{
+  background-color: hsl(217, 85%, 79%);
+}
+ul, ul li, nav h1, main h2{
+  margin: 0;
+}
+main{
+  background-image: url(../img/banner.jpg);
+  background-position: center;
+  padding: 120px;
+  text-align: center;
+  color: white;
+}
+main h2{
+  font-size: 40px;
+}
+main h3{
+  font-size: 20px;
+}
+main input[type="button"]{
+  font-size: 20px;
+  padding: 10px 25px;
+  border-style: none;
+  color: white;
+  border-radius: 5px;
+}
+main input[type="button"]:nth-of-type(1){
+  background-color: hsl(217, 70%, 70%);
+}
+main input[type="button"]:nth-of-type(2){
+  background-color: transparent;
+  border: 1px gray solid;
+  margin-left: 15px;
+}
+main input[type="button"]:nth-of-type(1):hover{
+  background-color: hsl(217, 70%, 75%);
+}
+main input[type="button"]:nth-of-type(2):hover{
+  background-color: hsla(167, 6%, 44%, 0.4);
+}
+section.hero{
+  text-align: center;
+  color: grey;
+  margin: 80px 0;
+}
+section.hero h3{
+  color: lightgrey;
+}
+div.info{
+  display: flex;
+  margin: 0 50px;
+}
+div.info div{
+  border: 1px hsla(195, 2%, 68%, 0.5) solid;
+  border-radius: 5px;
+  margin: 0 10px;
+  padding: 10px;
+}
+div.info i{
+  background-color: hsl(223, 80%, 70%);
+  padding: 30px;
+  border-radius: 50%;
+  color: white;
+  font-size: 30px;
+}
+section.learn{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 80px 0;
+}
+section.learn h2{
+  font-size: 30px;
+}
+section.learn h3{
+  font-size: 20px;
+}
+div.pics{
+  display: flex;
+  justify-content: center;
+}
+div.pics div{
+  width: 40%;
+  padding: 10px 0;
+  margin: 0 15px;
+}
+div.pics div img{
+  width: 90%;
+  border-radius: 5px;
+}
+section.learn input[type="button"]{
+  font-size: 15px;
+  padding: 10px 25px;
+  border: 1px gray solid;
+  color: white;
+  border-radius: 5px;
+  background-color: transparent;
+}
+section.learn
+input[type="button"]:hover{
+  background-color: hsla(167, 6%, 44%, 0.4);
+  cursor: pointer;
+}
+section.image{
+  display: flex;
+  margin: 80px 0;
+}
+section.image ul{
+  list-style: none;
+}
+section.image aside{
+  margin-left: 15px;
+}
+section.image hr{
+  width: 80%;
+}
+section.image input[type="button"]{
+  font-size: 15px;
+  padding: 10px 25px;
+  border: 1px gray solid;
+  color: gray;
+  border-radius: 5px;
+  background-color: transparent;
+}
+section.image
+input[type="button"]:hover{
+  background-color: hsla(167, 6%, 84%, 0.4);
+}
+section.image h3, section.image h4{
+  font-size: 20px;
+}
+section.image ul li{
+  padding:10px 0;
+  border-bottom: 2px lightgray solid;
+}
+section.image ul li a{
+  color: hsl(212, 60%, 58%);
+}
+section.image aside ul li:nth-of-type(4){
+  border-style: none;
+}
+aside div p{
+  width: 60%;
+}
+article img{
+  width: 90%;
+  border-radius: 5px;
+}
+footer{
+  display: flex;
+  padding: 45px 0;
+  background-color:  hsla(167, 6%, 94%, 0.4);
+}
+footer div{
+  width: 25%;
+  padding: 0 10px;
+  color: gray;
+}
+footer div h3{
+  text-align: center;
+  font-size: 25px;
+}
+footer ul{
+  margin: 0;
+}
+footer ul li{
+  padding:10px 0;
+  border-bottom: 2px lightgray solid;
+  list-style: none;
+  margin: 0;
+}
+footer ul a{
+  color: gray;
+}
+footer div i{
+  font-size: 30px;
+  padding: 0 15px;
+}
+footer ul li:nth-of-type(4){
+  border-style: none;
+}
