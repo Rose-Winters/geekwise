@@ -1,0 +1,40 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css";
+body{
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+h1, h2, h3, h4, h6, p, ul, ul li{
+  margin: 0;
+}
+header, footer, nav ul{
+  display: flex;
+}
+header, footer{
+  background-image: url(../img/overlay.png);
+  background-color: hsl(43, 93%, 11%);
+  color: white;
+  height: 300px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+header a{
+  text-decoration: none;
+  color: inherit;
+}
+header h6{
+  font-size: 8px;
+  color: hsl(34, 11%, 88%);
+}
+header b{
+  color: white;
+}
+nav ul{
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+nav ul li{
+  padding: 0 10px;
+}
