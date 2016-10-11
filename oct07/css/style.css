@@ -122,15 +122,12 @@ header h2{
 /*Car News*/
 section.two{
   padding: 3%;
+  position: relative;
 }
 section.two h2{
   font-size: 4.5vw;
   margin-left: 15px;
   margin-bottom: 0;
-}
-section.two hr{
-  width: 98%;
-  border-top: 10px hsl(190, 65%, 45%) solid;
 }
 div.news{
   display: flex;
@@ -157,3 +154,4 @@ div.news div a{
   font-size: 1.5vw;
   color: hsl(190, 65%, 45%);
 }
+/* Progress Bars*/
