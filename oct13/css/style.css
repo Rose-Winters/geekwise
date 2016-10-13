@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
+body{
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+}
+h1, h2, h4, ul{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+header{
+  background-image: url(../img/slide-2.jpg);
+  height: 100vh;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 45px 40px;
+}
+nav h1{
+  font-size: 35px;
+}
+ul{
+  list-style: none;
+  display: inline-flex;
+}
+ul li{
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 500;
+}
+nav li.focusme{
+  background-color: hsl(189, 69%, 49%);
+}
+nav ul ul{
+  display: flex;
+  flex-direction: column;
+}
+nav ul li ul li{
+  padding: 0;
+}
