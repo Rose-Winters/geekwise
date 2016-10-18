@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
+body{
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+}
+h1, h2, h3, h5, h6{
+  margin: 0;
+  padding: 0;
+}
+ul, ol{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+/*Header and Navigation*/
+header{
+  background-image: url(../img/slide-1.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  height: 10vw;
+  background-color: hsla(0, 0%, 0%, 0.25);
+}
+nav h1{
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+nav h1 a{
+  width: 122px;
+  display: inline-block;
+  height: 100%;
+  opacity: 0;
+}
+nav ul{
+  display: flex;
+}
+nav li{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+nav li::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background-image: linear-gradient(
+    hsla(189, 69%, 49%, 0.75),
+    hsla(189, 69%, 49%, 0),
+    hsla(0, 0%, 100%, 0.75)
+    );
+  transition: top 500ms ease-in-out;
+}
+nav li:hover::after{
+  top:100%;
+}
+nav li span{
+  flex: none;
+  height: 100%;
+  transform: translateY(-100%);
+  transition: transform 600ms ease-in-out;
+}
+nav li span:first-child{
+  background-color: hsla(189, 69%, 49%, 0);
+  transition: background-color 400ms ease-in-out;
+}
+nav li span:last-child{
+  background-color: hsla(0, 0%, 100%, 0);
+  transition: background-color 400ms ease-in-out;
+}
+nav li:hover span{
+  transform: translateY(0%);
+}
+nav li:hover span:first-child{
+  background-color: hsla(189, 69%, 49%, 1);
+}
+nav li:hover span:last-child{
+  background-color: hsla(0, 0%, 100%, 1);
+}
+nav li:hover span{
+  transform: translateY(0%);
+}
+nav li a{
+  display: flex;
+  align-items: center;
+}
+/*header{
+  background-image: url(../img/slide-2.jpg);
+  height: 100vh;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 45px 40px;
+}
+nav h1{
+  font-size: 35px;
+}
+ul{
+  list-style: none;
+  display: inline-flex;
+}
+ul li{
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 500;
+}
+nav li.focusme{
+  background-color: hsl(189, 69%, 49%);
+}
+nav ul ul{
+  display: none;
+  flex-direction: column;
+}
+nav ul li ul li{
+  padding: 0;
+}*/
+/*Main*/
+main{
+  display: flex;
+  justify-content: space-around;
+  margin: 60px 20px;
+}
+main div.parent{
+  width: calc(80% / 3);
+  background-color: hsl(189, 69%, 49%);
+  height: 90vh;
+  padding: 65px 35px;
+  transition: all 700ms ease;
+}
+main div.parent:hover{
+  background-color: hsl(40, 4%, 16%);
+}
+main h4{
+  font-size: 6vw;
+  display: inline;
+  border: 0 white solid;
+  background-color: white;
+  color: hsl(189, 69%, 45%);
+  border-radius: 50%;
+  padding: 10px 34px;
+}
+main h3{
+  font-size: 4vw;
+  font-weight:400;
+}
+main h5{
+  font-size: 1.5vw;
+  font-weight:400;
+  margin-bottom: 0;
+}
+main p{
+  color: hsl(0, 0%, 100%);
+  font-weight: lighter;
+  line-height: 1.6;
+  padding-bottom: 25px;
+}
+main a{
+  color: hsl(189, 69%, 45%);
+  font-size: 1.1vw;
+}
+main div.anchor{
+  display: inline-block;
+  background-color: white;
+  padding: 15px 40px;
+}
+main div.anchor:hover{
+  color: white;
+  background-color: hsl(189, 69%, 45%);
+  transition: all 1000ms ease-in-out;
+}
+main div.anchor:hover a{
+  color: white;
+}
+/*Gallery*/
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+}
+.gallery > div{
+  width: calc(100% / 3);
+  position: relative;
+  overflow: hidden;
+  font-size: 3vh;
+}
+.gallery img{
+  width: 100%;
+  transition: transform 400ms ease-in-out;
+  float: left;
+}
+.gallery div div{
+  position: absolute;
+  top: 5vw;
+  right: 2.5vw;
+  bottom: 5vw;
+  left: 2.5vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 400ms ease-in-out;
+}
+.gallery > div:hover img{
+  transform: scale(1.25);
+}
+.gallery > div:hover div{
+  color: white;
+  background-color: hsl(0, 0%, 9%);
+}
+
+@media screen and (max-width: 768px){
+  .gallery > div.parent2{
+    width: calc(100% / 2);
+  }
+  main div.parent{
+    padding:10px;
+  }
+  main h4{
+    font-size: 3vw;
+    padding: 10px 15px;
+  }
+}
+@media screen and (max-width: 544px){
+  .gallery > div.parent2{
+    width: 100%;
+  }
+  .gallery div div{
+    top: 20vw;
+    right: 15vw;
+    bottom: 20vw;
+    left: 15vw;
+  }
+  .gallery > div:hover img{
+    transform: scale(1);
+  }
+  .gallery > div:hover div{
+    color: hsl(0, 0%, 9%);
+    background-color: white;
+  }
+}
