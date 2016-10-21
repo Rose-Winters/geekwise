@@ -1,0 +1,310 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css';
+@font-face {
+  font-family: 'BrushScript';
+  src: url('http://matthewhigley.com/fonts/BrushScriptStd.eot');
+  src: url('http://matthewhigley.com/fonts/BrushScriptStd.eot?#iefix') format('embedded-opentype'),
+       url('http://matthewhigley.com/fonts/BrushScriptStd.woff') format('woff'),
+       url('http://matthewhigley.com/fonts/BrushScriptStd.ttf')  format('truetype'),
+       url('http://matthewhigley.com/fonts/BrushScriptStd.svg#eb21f6604ba28d5573abad1c01255830') format('svg');
+  font-style:   normal;
+  font-weight:  400;
+}
+@font-face {
+  font-family: 'Fraktur';
+  src: url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.eot');
+  src: url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.eot?#iefix') format('embedded-opentype'),
+       url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.woff') format('woff'),
+       url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.ttf')  format('truetype'),
+       url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.svg#f78369fb7f540f355d128fc492e4218d') format('svg');
+  font-style:   normal;
+  font-weight:  400;
+}
+body{
+  background-color: hsl(0, 89%, 14%);
+  margin: 2vw 15vw;
+}
+header{
+    font-family: 'Fraktur';
+}
+nav, h2, h3{
+  font-family: 'BrushScript';
+}
+h1, h2, h3, h4, h5, h6, ul, ol, hr{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h2, h3, nav ul li{
+  color: white;
+  text-shadow:
+    -1px -1.5px 0.5px hsl(0, 79%, 24%),
+     1px -1.5px 0.5px hsl(0, 79%, 24%),
+     -1px 1.5px 0.5px hsl(0, 79%, 24%),
+    1px 1.5px 0.5px hsl(0, 79%, 24%);
+}
+h2{
+  font-size: 4.5vh;
+}
+i.fa{
+  font-size: 5vh;
+}
+header, main{
+  border: 3px hsl(0, 0%, 1%) solid;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+header,
+nav ul,
+section.homepage,
+section.homepage aside:last-child div.hours,
+section.homepage aside:first-child div:first-child div,
+section.history,
+section.history aside,
+section.menu,
+section.menu div.flexbox,
+section.news div.flex,
+section.contact form,
+section.contact form div
+{
+  display: flex;
+}
+header div{
+  background-color: white;
+  flex: 1;
+  text-align: center;
+  font-size: 1.5vw;
+  line-height: 45px;
+}
+header div h1{
+  color: hsl(52, 72%, 56%);
+  text-shadow:
+    -1px -1px 1px hsl(0, 0%, 8%),
+     1px -1px 1px hsl(0, 0%, 8%),
+     -1px 1px 1px hsl(0, 0%, 8%),
+      1px 1px 1px hsl(0, 0%, 8%);
+}
+header div span{
+  font-size: 4.5vw;
+}
+header img{
+  flex: 3;
+}
+header + hr, body > hr{
+  margin: 3px 0;
+  border: 0.12vw white solid;
+  border-radius: 0.5vw;
+}
+nav{
+  border: 2px hsla(0, 0%, 40%, 0.5) dotted;
+  border-left: none;
+  border-right: none;
+  margin: 15px 5px;
+  padding: 7px 15px;
+}
+nav ul{
+  justify-content: space-around;
+}
+nav ul li{
+  font-size: 2vw;
+  font-style: italic;
+}
+nav ul li:hover{
+  color: white;
+  text-shadow:
+    -1px -1px 10px hsl(0, 79%, 34%),
+     1px -1px 0 hsl(0, 79%, 34%),
+     -1px 1px 0 hsl(0, 79%, 34%),
+      1px 1px 10px hsl(0, 79%, 34%);
+}
+main{
+  background-color: white;
+}
+section.homepage{
+  justify-content: center;
+  align-items: center;
+}
+section.homepage aside{
+  padding: 15px;
+}
+section.homepage span{
+  text-decoration: underline;
+}
+section.homepage aside:first-child{
+  width: 45%;
+  margin: 10px 0;
+}
+section.homepage aside img{
+  width: 15vw;
+  float: right;
+}
+section.homepage aside p{
+  font-size: 14px;
+}
+section.homepage aside:last-child > div{
+  border: 1px hsl(0, 0%, 8%) solid;
+  border-radius: 15px;
+  margin: 20px 0;
+  width: 20vw;
+  text-align: center;
+  padding: 5px 8px;
+  position: relative;
+}
+section.homepage aside:last-child div.hours div{
+  padding: 0 15px;
+  margin: 0 auto;
+}
+section.homepage aside:last-child h3{
+  font-size: 4vh;
+  position: absolute;
+  top: -14px;
+  left: 15px;
+  background-color: white;
+  color: hsl(52, 72%, 56%);
+  text-shadow:
+    -1px -1.5px 0 hsl(0, 79%, 34%),
+     1px -1.5px 0 hsl(0, 79%, 34%),
+     -1px 1.5px 0 hsl(0, 79%, 34%),
+      1px 1.5px 0 hsl(0, 79%, 34%);
+}
+section.homepage a{
+  font-size: 14px;
+  text-decoration: underline;
+  background-color: white;
+  padding: 5px 15px;
+  color: hsl(0, 79%, 24%);
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 5px;
+  transition: all 350ms ease-in-out;
+}
+section.homepage a:hover{
+  background-color: hsl(0, 79%, 14%);
+  color: white;
+  text-decoration: none;
+}
+section.history{
+  flex: 3;
+  font-size: 14px;
+}
+section.history article, section.history aside{
+  padding: 50px 35px;
+}
+section.history article img:first-of-type{
+  float: right;
+}
+section.history article img:last-of-type{
+  float: left;
+}
+section.history aside{
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+}
+section.menu{
+  margin: 0 10%;
+  flex-direction: column;
+}
+section.menu div{
+  border: 1px hsl(0, 0%, 8%) solid;
+  border-radius: 15px;
+  margin: 20px 0;
+  text-align: center;
+  padding: 5px 8px;
+  position: relative;
+}
+section.menu div.flexbox{
+  justify-content: space-around;
+  border: none;
+}
+section.menu div.flexbox div{
+  width: 45%;
+}
+ section.menu div:nth-of-type(6){
+   border: none;
+   margin-top: 0;
+ }
+section.menu div.move h2{
+  font-size: 4vh;
+  position: absolute;
+  top: -20px;
+  left: 15px;
+  background-color: white;
+}
+section.news{
+  margin: 3% 5%;
+}
+section.news > div:nth-of-type(2){
+  margin: 0 10%;
+}
+section.news div.flex{
+  justify-content: space-between;
+}
+div.gradient{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 3vw;
+  background-image: linear-gradient(
+    to right,
+    hsla(0, 100%, 100%, 1) 15%,
+    hsla(0, 100%, 95%, 0.1) 15%,
+    hsla(0, 40%, 90%, 0.3) 20%,
+    hsla(0, 90%, 30%, 0.2) 50%
+    );
+}
+div.gradient h3{
+  padding-right: 13px;
+  font-size: 4vh;
+  text-shadow:
+    -1px -1.5px 15px hsl(0, 79%, 24%),
+     1px -1.5px 5px hsl(0, 79%, 24%),
+     -1px 1.5px 5px hsl(0, 79%, 24%),
+    1px 1.5px 15px hsl(0, 79%, 24%);
+}
+section.news div.gradient:first-of-type, section.contact div.gradient{
+  border-bottom: 2px hsla(0, 0%, 40%, 0.5) dotted;
+}
+section.news div.parent{
+  border-bottom: 2px hsl(0, 50%, 23%) solid;
+}
+section.news div.parent:last-of-type,
+section.news a{
+  margin-bottom: 30px;
+}
+section.news div.gradient:last-of-type{
+  border-top: 2px hsla(0, 0%, 40%, 0.5) dotted;
+}
+section.contact{
+  margin: 0 5%;
+}
+section.contact form{
+  flex-direction: column;
+  align-items: center;
+}
+section.contact form div [type="text"]{
+  margin-bottom: 5px;
+  font-family: 'BrushScript';
+}
+section.contact a{
+  font-size: 14px;
+  border: 1px hsl(0, 79%, 14%) solid;
+  padding: 5px 15px;
+  color: hsl(0, 79%, 14%);
+  border-radius: 5px;
+  display: inline-block;
+  margin: 5px;
+  transition: all 350ms ease-in-out;
+}
+section.contact a:hover{
+  background-color: hsl(0, 79%, 14%);
+  color: white;
+  text-decoration: none;
+}
+section div.almostdone{
+  text-align: center;
+}
+section div.almostdone:last-of-type{
+  margin-bottom: 10px;
+}
