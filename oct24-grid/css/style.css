@@ -1,0 +1,35 @@
+body{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 100px);
+  grid-template-areas:
+    '. . header header header header header'
+    'aside . . main main main .'
+    'aside . . main main main .'
+    'aside . . . foot . .';
+  grid-gap: 10px;
+}
+div.a{
+  grid-area: header;
+  background-color: hsl(347, 82%, 30%);
+  /*padding: 10px;
+  grid-column: span 2;*/
+}
+div.b{
+  grid-area: aside;
+  background-color: hsl(208, 68%, 40%);
+  /*grid-column: 1 / span 3;
+  grid-row: 2 / span 3;*/
+}
+div.c{
+  grid-area: main;
+  background-color: hsl(284, 82%, 35%);
+  /*grid-column: 2;
+  grid-row: 3;*/
+}
+div.d{
+  grid-area: foot;
+  background-color: hsl(317, 84%, 27%);
+  /*grid-column: 1;
+  grid-row: 1;*/
+}
