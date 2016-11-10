@@ -1,0 +1,271 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+body{
+  margin: 0;
+  color: hsl(330, 90%, 10%);
+}
+h1, h2, ul, p{
+  margin: 0;
+}
+header{
+  height: 18vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-image: linear-gradient(
+    hsl(0, 0%, 3%),
+    hsl(282, 70%, 27%),
+    hsl(284, 73%, 51%)
+    );
+}
+header img{
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  transition: 500ms all ease-in-out;
+}
+header img:hover{
+  transform: rotateY(180deg);
+}
+nav ul{
+  display: flex;
+  list-style: none;
+}
+nav ul li{
+  font-size: 1.5vw;
+  padding: 10px 15px;
+  margin: 0 10px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: inherit;
+}
+nav ul li:hover, nav ul li.active{
+  background-image: radial-gradient(
+    hsl(0, 0%, 100%),
+    hsl(0, 0%, 40%)
+    );
+    border-radius: 8px;
+}
+main{
+  padding: 20px 0;
+  background-color: hsl(284, 73%, 50%);
+  box-sizing: border-box;
+}
+footer{
+  height: 18vh;
+  background-image: linear-gradient(
+    hsl(284, 73%, 51%),
+    hsl(282, 70%, 27%),
+    hsl(0, 0%, 3%)
+    );
+}
+footer i.fa{
+  margin-top: 40px;
+  font-size: 50px;
+}
+footer a{
+  text-decoration: none;
+  color: inherit;
+}
+main.home{
+  height: 64vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 25px;
+}
+main.home h1{
+  padding: 0 15px;
+  font-size: 10vw;
+}
+main.home img{
+  height: 20vw;
+  width: 20vw;
+  border-radius: 100%;
+  transition: 1000ms all ease-in-out;
+}
+main.home img:hover{
+  transform: rotateY(360deg);
+}
+main.bio h2{
+  text-align: center;
+  font-size: 5vw;
+}
+main.bio article{
+  width: 65%;
+  margin: 0 auto;
+}
+main.bio section{
+  display: flex;
+  margin: 10px;
+}
+main.bio section h3{
+  text-align: center;
+}
+main.bio section aside{
+  border: 1px dotted hsl(330, 90%, 10%);
+  margin: 5px 10px;
+  border-radius: 5px;
+}
+main.bio aside div{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+main.bio aside div img{
+  width: 7vw;
+  height: 7vw;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+main.bio aside div p{
+  width: 70%;
+}
+main.contact{
+  display: flex;
+  justify-content: center;
+  height: 64vh;
+}
+main.contact hr{
+  width: 5%;
+  border-color:hsl(278, 68%, 83%);
+}
+main.contact h3{
+  text-align: center;
+  font-size: 4vw;
+}
+main.contact .divparent{
+  display: flex;
+  margin-top: 70px;
+}
+main.contact address{
+  margin-right: 25px;
+}
+main.contact address h4{
+  margin: 0;
+  padding: 10px 0;
+}
+main.contact address h4:nth-of-type(1){
+  margin-top: 0;
+}
+main.contact address a{
+  text-decoration:none;
+  color: hsl(330, 30%, 70%);
+}
+main.contact form{
+  display: flex;
+  flex-direction: column;
+}
+main.contact form div{
+  display: flex;
+}
+main.contact form input[type="text"]{
+  margin-right: 10px;
+}
+main.contact form input[type="text"],
+main.contact form input[type="email"]{
+flex: 1;
+}
+main.contact form textarea{
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  max-height: 300px;
+  min-height: 100px;
+}
+main.contact form input[type="text"],
+main.contact form input[type="email"],
+main.contact form textarea{
+  border-style: none;
+  margin-bottom: 10px;
+  border-radius: 1px;
+  background-color: hsl(279, 100%, 95%);
+}
+main.contact form input[placeholder="Name"],
+main.contact form input[placeholder="Email"],
+textarea [placeholder="Message"]{
+  text-indent: 10px;
+}
+
+main.contact form input[type="submit"]{
+  align-self: flex-end;
+  border: none;
+  padding: 10px 15px;
+  background-color: hsl(278, 88%, 43%);
+  color: white;
+}
+
+
+
+@media screen and (max-width: 775px){
+  nav ul li{
+    font-size: 2.5vw;
+  }
+  main.bio section{
+    display: block;
+  }
+  main.bio section aside{
+    border: none;
+    margin: 5px;
+  }
+  main.bio aside div img{
+    width: 15vw;
+    height: 15vw;
+    border-radius:10px;
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 445px){
+  header img{
+    display: none;
+  }
+  nav ul{
+    padding-left: 10px;
+  }
+  nav ul li{
+    font-size: 5.5vw;
+    padding: 5px;
+    margin: 0 5px;
+  }
+  main.home{
+    padding: 0;
+    flex-direction: column;
+  }
+  main.home h1{
+    padding: 5px 0;
+  }
+  main.home img{
+    width: 150px;
+    height: 150px;
+  }
+  main.bio h2{
+    font-size: 10vw;
+  }
+  main.bio article{
+    width: 100%;
+    margin:0 10px;
+  }
+  main.bio aside div{
+    padding: 0;
+  }
+  main.bio aside div img{
+    width: 50%;
+    height: 50%;
+    padding-top: 5px;
+  }
+  main.bio aside div p{
+    padding-bottom: 10px;
+  }
+  main.contact h3{
+    font-size: 10vw;
+    margin: 0;
+  }
+  main.contact .divparent{
+    display: block;
+    margin-top: 0;
+  }
+  main.contact address{
+    margin-bottom: 25px;
+  }
+}
