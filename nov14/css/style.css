@@ -1,0 +1,16 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+body{
+  margin: 0;
+}
+main{
+  display: flex;
+}
+main div.first{
+  width: 35%;
+  background-color: hsl(216, 11%, 91%);
+  height: 100vh;
+}
+main div.last{
+  width: 65%;
+  height: 100vh;
+}
