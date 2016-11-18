@@ -10,6 +10,22 @@ main div.first{
   background-color: hsl(216, 11%, 91%);
   height: 100vh;
 }
+main div.content{
+  position: relative;
+}
+main div.content::before{
+  display: block;
+  content: "";
+  clear: both;
+}
+main div.content img{
+  position: absolute;
+  top: 60px;
+  left: 85px;
+  padding: 30px 15px;
+  background-color: white;
+  border-radius: 10px;
+}
 main div.last{
   width: 65%;
   height: 100vh;

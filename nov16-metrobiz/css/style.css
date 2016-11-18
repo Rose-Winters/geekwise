@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900');
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+body{
+  margin: 0;
+  text-align: center;
+  color: hsl(13, 66%, 10%);
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+h1, h2, h3, h4, h5, h6, p, ul, ol, li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header, header nav ul, main div.parent{
+  display: flex;
+}
+header{
+  flex-direction: column;
+  padding: 150px 0 100px;
+  color: white;
+  background-color: hsl(30, 100%, 7%);
+  background-image: url(../img/bg.png);
+}
+header h1{
+  font-size: 70px;
+}
+header p{
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+header nav{
+  padding: 75px 0 0 0;
+}
+header nav ul{
+  justify-content: center;
+}
+header nav ul li{
+  padding: 15px 10px;
+  letter-spacing: 2px;
+}
+header a{
+  text-decoration: none;
+  margin: 0 10px;
+  color: inherit;
+}
+header li.active{
+  background-color: hsl(343, 72%, 43%);
+}
+section{
+  padding: 150px 0;
+  background-color: hsl(14, 72%, 52%);
+}
+section h2, main h2{
+  font-size: 40px;
+}
+section p{
+  width: 70%;
+  margin: 35px auto 0;
+  font-size: 16px;
+  line-height: 2;
+}
+main{
+  padding: 100px 0;
+  width: 70%;
+  margin: 0 auto;
+}
+main div.content{
+  padding: 50px 0;
+}
+main div.parent{
+  justify-content: space-between;
+}
+main div.content > div{
+  padding-bottom: 30px;
+}
+
+main > div aside{
+  width: 30%;
+  line-height: 1.5;
+}
+i.fa{
+  font-size: 75px;
+  margin-bottom: 20px;
+}
+h3{
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+h4{
+  margin-bottom: 15px;
+}
+main p{
+  margin-bottom: 40px;
+}
+main div.parent:last-of-type{
+  color: hsl(270, 8%, 58%);
+}
+main a{
+  text-decoration: none;
+  color: white;
+  padding: 20px 25px;
+  background-color: hsl(343, 72%, 43%);
+}
+footer{
+  padding: 50px 0;
+  color: white;
+  background-color: hsl(30, 100%, 7%);
+  background-image: url(../img/bg.png);
+  font-weight: lighter;
+}
+footer h5{
+  display: none;
+}
+footer p{
+  margin: 50px 0;
+}
+footer i.fa{
+  font-size: 20px;
+  padding: 10px 25px;
+}
+footer hr{
+  width: 90%;
+  border-color: hsl(29, 46%, 14%);
+}
