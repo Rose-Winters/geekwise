@@ -129,16 +129,18 @@ section.first{
   text-align: center;
   flex-direction: column;
 }
-section.first h3{
+section.first h3, #text h1{
   font-size: 3vw;
   padding: 80px 0 15px;
+  text-align: center;
 }
-section.first p{
+section.first p, #text p{
   width: 50%;
   font-size: 1.5vw;
   font-weight: 300;
   line-height: 2;
-  margin: 15px auto;
+  margin: 0 auto;
+  padding: 15px 0;
 }
 section.first img{
   align-self: baseline;
@@ -147,6 +149,23 @@ section.first img{
   padding: 25px 25px 0;
   background-color: white;
   border-radius: 10px 10px 0 0;
+}
+section.first div{
+  display: flex;
+  justify-content: center;
+}
+section.first div a{
+  margin: 0 auto;
+  align-self: center;
+  font-size: 5vw;
+  color: hsl(210, 4%, 52%);
+}
+section.first i.fa{
+  margin-bottom: 15px;
+  border-radius: 100%;
+  background-color: white;
+  width: 100px;
+  height: 100px;
 }
 section.second{
   padding: 50px 0;
@@ -179,8 +198,128 @@ section.second p{
   color: hsl(210, 4%, 52%);
   font-weight: 300;
 }
-@media screen and (max-width: 800px){
-  section.first p{
+#text{
+  background-color: #F2F2F2;
+  padding-top: 45px;
+}
+#boxes{
+  background-color: #F2F2F2;
+}
+#boxes div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5%;
+  margin: 0 auto;
+  width: 75%;
+}
+
+#boxes aside span{
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
+#boxes div aside{
+  width: 30%;
+  border-radius: 2%;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#boxes div aside img{
+  height: 150px;
+  width: 100%;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+  margin-bottom: 25px;
+}
+#boxes p{
+  width: 75%;
+  padding-bottom: 15px;
+  line-height: 2;
+  font-weight: 300;
+  font-size: 1vw;
+}
+#boxes a, #blue a{
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #ECECEC;
+  margin-bottom: 15px;
+}
+#boxes a:hover{
+  background-color: hsla(210, 4%, 72%, 0.5);
+}
+#blue a:hover{
+  background-color:  hsla(184, 65%, 96%, 0.1);
+}
+#blue{
+  background-color: hsl(184, 65%, 56%);
+  height: 200px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+
+}
+
+#blue a{
+  margin-left: 10px;
+  padding: 15px 25px;
+  background-color: #47CDD9;
+  border: 1px solid white;
+  font-size: 2vw;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+footer div{
+  margin: 5%;
+}
+
+footer div i{
+  padding: 10px;
+  margin: 0px 10px;
+  border: 1px solid #ECECEC;
+  border-radius: 10%;
+  color: #949494;
+
+}
+
+footer div i:hover{
+  background-color: #ECECEC;
+}
+
+
+footer div a{
+  color: #949494;
+}
+
+footer div a:hover{
+  text-decoration: none;
+  color: #47CDD9;
+}
+
+footer span{
+  color: #949494;
+}
+
+
+@media screen and (max-width: 915px){
+  section.first p, #text p{
     font-size: 2.5vw;
     width: 85%;
   }
@@ -204,8 +343,17 @@ section.second p{
   section.second h3{
     font-size: 3vw;
   }
+  #boxes div{
+    width: 90%;
+  }
+#boxes div aside{
+  width: 45%;
 }
-@media screen and (max-width: 600px){
+#boxes p{
+  font-size: 1.6vw;
+}
+}
+@media screen and (max-width: 445px){
   nav{
     flex-direction: column;
   }
@@ -222,13 +370,21 @@ section.second p{
   header p{
     font-size: 5vw;
   }
-  section.first h3{
+  section.first h3, #text h1{
     font-size: 8vw;
     margin: 0;
   }
-  section.first p{
+  section.first p, #text p{
     font-size: 3.5vw;
     width: 95%;
+  }
+  section.first a, section.first i.fa{
+    display: none;
+  }
+  section.first img{
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
   }
   section.second i.fa{
     font-size: 10vw;
@@ -239,4 +395,16 @@ section.second p{
   section.second h3{
     font-size: 5vw;
   }
+  #boxes div{
+    width: 90%;
+  }
+#boxes div aside{
+  width: 100%;
+}
+#boxes p{
+  font-size: 3.5vw;
+}
+  #blue{
+   flex-direction: column;
+}
 }
