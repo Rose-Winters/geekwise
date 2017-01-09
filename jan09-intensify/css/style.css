@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+body{
+  margin: 0;
+  font-family: Montserrat;
+}
+h1, h2, ul, a{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
+.btn{
+  border: solid 1px lightgrey;
+  background-color: white;
+  padding: 15px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-family: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+.btn-cta{
+  background-color: hsl(9, 89%, 67%);
+  color: white;
+  border: none;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+nav ul{
+  position: absolute;
+  background-color: hsl(193, 68%, 45%);
+  top: 0;
+  left: -150px;
+  padding: 20px;
+  width: 250px;
+  height: 100vh;
+  transition: all 150ms ease-in-out;
+}
+nav ul:hover{
+  left: 0;
+}
+nav li{
+  border-bottom: 1px solid hsla(0, 0%, 100%, .25);
+}
+nav a{
+  padding: 15px 0;
+  display: inline-block;
+  color: white;
+  font-weight: 100;
+  font-family: inherit;
+}
+nav h1{
+  font-family: Pacifico;
+  color: hsl(9, 89%, 67%);
+}
+#hero{
+  background-image: url(../img/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 150px 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#hero div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#hero div h2{
+  color: hsl(192, 68%, 45%);
+  font-size: 3vw;
+}
+#hero p{
+  width: 50%;
+  line-height: 1.8;
+  font-weight:lighter;
+}
