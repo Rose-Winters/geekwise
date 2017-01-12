@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+body{
+  margin: 0;
+  font-family: 'Open Sans';
+  color: hsl(213, 6%, 49%);
+  font-weight: 200;
+}
+h1, h2, h3, h4, ul, a{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
+h3{
+  font-size: 2vw;
+}
+.btn{
+  border: solid 1px lightgrey;
+  background-color: white;
+  padding: 15px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-family: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+.btn-cta{
+  background-color: hsl(9, 89%, 67%);
+  color: white;
+  border: none;
+}
+.fc-blue{
+  color: hsl(192, 68%, 45%);
+}
+.img-round{
+  border-radius: 100%;
+}
+.bg-blue{
+  background-color: hsl(192, 68%, 45%);
+  color: hsl(193, 32%, 85%);
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+nav div{
+  position: absolute;
+  top: 0;
+  left: -320px;
+  width: 320px;
+  height: 100vh;
+  transition: all 250ms ease-in-out;
+  background-color: hsl(193, 68%, 45%);
+}
+nav div.open {
+  left: 0;
+}
+nav div i{
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  color: hsl(193, 57%, 78%);
+}
+nav div i:hover{
+  color: white;
+  cursor: pointer;
+}
+nav ul{
+  padding: 30px;
+}
+nav li{
+  border-bottom: 1px solid hsla(0, 0%, 100%, .25);
+}
+nav ul li:last-of-type{
+  border-bottom: none;
+}
+nav a{
+  padding: 15px 0;
+  display: inline-block;
+  color: white;
+  font-weight: 100;
+  font-family: inherit;
+}
+nav ul + button{
+  display: none;
+  width: 85%;
+}
+nav h1{
+  font-family: Pacifico;
+  color: hsl(9, 89%, 67%);
+  font-size: 3vw;
+  font-weight: 200;
+}
+#hero{
+  background-image: url(../img/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 150px 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#hero div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#hero div h2{
+  font-size: 3vw;
+}
+#hero p{
+  width: 50%;
+  line-height: 1.8;
+  font-weight:lighter;
+}
+#pm{
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+}
+#pm div{
+  width: 90%;
+}
+#pm div:first-of-type{
+  text-align: right;
+}
+#pm div:first-of-type h4{
+  width: 80%;
+}
+#pm p{
+  padding-bottom: 12%;
+  width: 80%;
+}
+#qt{
+  padding: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#qt div{
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+#qt p{
+  width: 65%;
+  line-height: 1.5;
+  margin: 0;
+}
+#qt p:nth-of-type(1){
+  font-style: italic;
+  padding: 30px 0;
+}
+#qt p:nth-of-type(2){
+  font-weight: 500;
+}
+#gallery{
+  display: flex;
+  width: 85%;
+  margin: 60px auto;
+}
+#gallery > div{
+  width: 29%;
+  margin: 20px auto;
+  border: 1.5px solid hsla(0, 0%, 70%, 0.25);
+  border-radius: 6px;
+  padding-bottom: 10px;
+}
+#gallery div div{
+  width: 90%;
+  margin: 0 auto;
+}
+#gallery img{
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  padding-bottom: 10px;
+}
+footer{
+  text-align: center;
+  padding: 7% 20%;
+  font-weight: 100;
+}
+footer > div{
+  display: flex;
+  justify-content: space-around;
+}
+footer div div{
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+footer h3{
+  color: white;
+}
+footer i.fa{
+  color: hsl(9, 89%, 67%);
+}
+footer hr{
+  width: 70%;
+  color: hsl(193, 32%, 85%);
+}
+footer hr + p{
+  margin-top: 30px;
+}
+
+
+
+@media screen and (max-width: 768px){
+  html{
+    text-align: center;
+  }
+  .img-round{
+      width: 95%;
+  }
+  .btn{
+    padding: 8px 10px;
+  }
+  .btn-cta{
+    padding: 7px 25%;
+    border-radius: 3px;
+  }
+  h3{
+    font-size: 8vw;
+  }
+  nav{
+    padding: 10px;
+  }
+  nav > button{
+    display: none;
+  }
+  nav ul{
+    text-align: left;
+  }
+  nav ul + button{
+    display: block;
+    margin: 0 auto;
+    font-size: 5vw;
+  }
+  nav h1{
+    font-size: 8vw;
+    margin-right: 33%;
+  }
+  nav div{
+    width: 80%;
+    left: -100%;
+  }
+  #hero div h2{
+    font-size: 10vw;
+  }
+  #hero p{
+    width: 88%;
+    line-height: 1.5;
+  }
+  #pm{
+    flex-direction: column;
+  }
+  #pm div{
+    width: 100%;
+  }
+  #pm div:last-of-type{
+    margin-top: 30px;
+  }
+  #pm div:first-of-type{
+    text-align: center;
+  }
+  #pm div:first-of-type h4{
+    width: 100%;
+    text-align: center;
+  }
+  #pm p{
+    width: 100%;
+  }
+  #qt h3 + p{
+    width: 95%;
+  }
+  #gallery{
+    flex-wrap: wrap;
+    margin: 15px auto;
+  }
+  #gallery > div{
+    width: 100%;
+    border-radius: 3px;
+  }
+  #gallery div img{
+    border-radius: 2px 2px 0 0;
+  }
+  footer{
+    padding: 40px;
+    font-size: 3.6vw;
+  }
+  footer h3{
+    padding-bottom: 15px;
+  }
+  footer > div{
+    flex-direction: column;
+    align-items: center;
+  }
+  footer div div{
+    margin: 0;
+    padding-top: 10px;
+    justify-content: center;
+  }
+  footer p{
+    margin: 0;
+  }
+  footer div div:last-of-type p:last-of-type{
+    padding-bottom: 20px;
+  }
+  footer hr + p{
+    font-size: 3vw;
+    margin-top: 20px;
+  }
+
+}
