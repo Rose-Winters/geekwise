@@ -8,6 +8,7 @@ body{
   margin: 0;
   font-family: 'Roboto Slab';
   display: flex;
+  color: lighten($bold-color, 25%);
   ul, li, a{
     list-style: none;
     margin: 0;
@@ -33,8 +34,25 @@ body{
     padding:0 10px 10px 0;
   }
   .b-s-add{
-    font-size: 5vh;
+    font-size: 4vh;
     border-width: 3px;
+  }
+  .img-scale{
+    width: 100%;
+    transition: 250ms all ease-in-out;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  .img-scale:hover{
+    transform: scale(1.1);
+  }
+  .overflow{
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  .img-fix{
+    width: 75%
   }
 }
 nav.open{
@@ -50,19 +68,6 @@ nav{
     margin: 8%;
     border-bottom: 1px solid lightgrey;
     padding-bottom: 30px;
-    a{
-      display: inline-block;
-      overflow: hidden;
-    }
-    img{
-      width: 100%;
-      border-radius: 5px;
-      transition: 250ms all ease-in-out;
-      margin-top: 20px;
-    }
-    img:hover{
-      transform: scale(1.1);
-    }
   }
   div{
     width: 100%;
@@ -150,11 +155,12 @@ main{
     font-size: 11px;
     h1{
       transition: 250ms all ease-in-out;
+      color: $bold-color;
     }
     h1 span{
-      color: lighten($bold-color, 30%);
       font-weight: 400;
       transition: 250ms all ease-in-out;
+      color: lighten($bold-color, 30%);
     }
     h1:hover, h1:hover span, div i.fa:hover{
       color: $main-color;
@@ -167,10 +173,9 @@ main{
   section.one{
     display: flex;
     justify-content: space-between;
-    padding: 60px 0;
+    padding: 100px 0;
     border-bottom: 1px solid lightgrey;
     aside{
-      color: lighten($bold-color, 30%);
       width: 70%;
        h2{
          margin: 0;
@@ -195,6 +200,8 @@ main{
     }
   }
   section.two{
+    padding: 60px 0;
+    border-bottom: 1px solid lightgrey;
     div.parent{
       display: flex;
       flex-wrap: wrap;
@@ -202,22 +209,44 @@ main{
         display: flex;
         align-items: center;
         width: 50%;
+        padding-bottom: 35px;
         i.fa{
-          font-size: 12vh;
+          font-size: 40px;
           color: $main-color;
-          padding: 15px;
+          padding: 0 60px 0 50px;
           position: relative;
+        }
+        i.fa-diamond{
+          padding-right: 55px;
         }
         i::after{
           content: "";
           border: 1px solid lightgrey;
-          padding: 60px;
+          border-radius: 5px;
+          padding: 40px;
           position: absolute;
-          top: -10px;
-          left: 0;
+          top: -20px;
+          left: 33px;
           transform: rotateZ(45deg);
         }
         aside{
+          width: 75%;
+          h4{
+            color:$bold-color;
+          }
+        }
+      }
+    }
+  }
+  section.three{
+    padding: 60px 0;
+    div.parent{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      div.inner{
+        width: 45%;
+        div{
           width: 75%;
         }
       }
