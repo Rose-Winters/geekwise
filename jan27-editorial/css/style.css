@@ -75,6 +75,7 @@ nav {
   width: 300px;
   background-color: #F5F6F7;
   font-size: 11px;
+  transition: 250ms all ease-in-out;
 }
 
 nav aside {
@@ -140,6 +141,10 @@ nav p {
   color: #535d67;
   padding-bottom: 20px;
   border-bottom: 1px solid lightgrey;
+}
+
+nav aside:nth-of-type(2) img:nth-of-type(3) {
+  margin-bottom: 50px;
 }
 
 nav aside:nth-of-type(3) {
@@ -334,14 +339,23 @@ main section.three div.parent div.inner {
   padding: 50px 0 0;
 }
 
+main section.three div.parent div.inner:first-of-type a.overflow {
+  width: 110%;
+}
+
 main section.three div.parent div.inner:nth-of-type(odd) {
   border-bottom: 1px solid lightgrey;
   border-right: 1px solid lightgrey;
+  padding-right: 5%;
 }
 
 main section.three div.parent div.inner:nth-of-type(even) {
   border-bottom: 1px solid lightgrey;
-  padding-left: 9.9%;
+  padding-left: 4.9%;
+}
+
+main section.three div.parent div.inner:nth-of-type(5), main section.three div.parent div.inner:nth-of-type(6) {
+  border-bottom: none;
 }
 
 main section.three div.parent div.inner div {
@@ -355,4 +369,133 @@ main section.three div.parent div.inner div h4 {
 
 main section.three div.parent div.inner div a.btn {
   margin-top: 50px 0;
+}
+
+.generic {
+  color: #3D4449;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.generic h1 {
+  font-size: 3.5vw;
+}
+
+.generic h3 {
+  color: black;
+}
+
+.generic img {
+  width: 80%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  margin-left: 8%;
+  border-radius: 5px;
+  transition: 250ms all ease-in-out;
+  margin-top: 20px;
+}
+
+.generic p {
+  padding: 10px;
+}
+
+@media screen and (max-width: 760px) {
+  .small {
+    margin-left: 0;
+  }
+  main section.one {
+    padding: 50px 0;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  main section.one aside {
+    width: 100%;
+    text-align: center;
+  }
+  main section.one aside p:last-of-type {
+    width: 100%;
+  }
+  main section.one img {
+    width: 100%;
+    height: 340px;
+    padding-bottom: 30px;
+  }
+  main section.two div.parent div.fix {
+    width: 100%;
+  }
+  main section.three div.parent div.inner:first-of-type a.overflow {
+    width: 138%;
+  }
+  main section.three div.parent div.inner:nth-of-type(odd) {
+    padding-right: 6%;
+  }
+  main section.three div.parent div.inner:nth-of-type(even) {
+    padding-left: 3.8%;
+  }
+}
+
+@media screen and (max-width: 449px) {
+  nav {
+    width: 200px;
+    left: -200px;
+  }
+  main {
+    padding: 40px 2%;
+  }
+  main header {
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  main section.one img {
+    display: none;
+  }
+  main section.one aside h2 {
+    font-size: 4vh;
+  }
+  main section.two div.parent {
+    padding: 25px 0;
+  }
+  main section.two div.parent div {
+    text-align: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  main section.two div.parent div i::after {
+    display: none;
+  }
+  main section.two div.parent div aside {
+    width: 100%;
+  }
+  main section.three div.parent div.inner {
+    text-align: center;
+    width: 100%;
+  }
+  main section.three div.parent div.inner:first-of-type a.overflow {
+    width: 100%;
+  }
+  main section.three div.parent div.inner:nth-of-type(even), main section.three div.parent div.inner:nth-of-type(odd) {
+    border: none;
+    padding: 0;
+  }
+  main section.three div.parent div.inner div {
+    width: 100%;
+  }
+  main .generic h1 {
+    font-size: 4vh;
+  }
+  main .generic img {
+    display: none;
+  }
 }
