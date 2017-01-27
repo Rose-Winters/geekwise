@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+body {
+  margin: 0;
+  font-family: 'Roboto Slab';
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #78858e;
+}
+
+body ul, body li, body a {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+body .btn {
+  border: 2px solid #a641dc;
+  color: #a641dc;
+  padding: 13px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+body .btn:hover {
+  background-color: rgba(166, 65, 220, 0.05);
+}
+
+body .base-style {
+  display: inline-block;
+  color: #3D4449;
+  border-bottom: 2.5px solid #a641dc;
+  font-size: 17px;
+  padding: 0 10px 10px 0;
+}
+
+body .b-s-add {
+  font-size: 4vh;
+  border-width: 3px;
+}
+
+body .img-scale {
+  width: 100%;
+  transition: 250ms all ease-in-out;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+body .img-scale:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+body .overflow {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+body .img-fix {
+  margin: 0;
+}
+
+nav.open {
+  left: 0;
+}
+
+nav {
+  position: absolute;
+  left: -300px;
+  width: 300px;
+  background-color: #F5F6F7;
+  font-size: 11px;
+}
+
+nav aside {
+  margin: 8%;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 30px;
+}
+
+nav div {
+  width: 100%;
+  background-color: #e7e9ec;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+nav div input {
+  width: 75%;
+  padding: 8px 0 8px 10px;
+  margin: 15px 10px 15px 0;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+
+nav ul li {
+  padding: 13px 0;
+  border-bottom: 1px solid lightgrey;
+  letter-spacing: 1.3px;
+  position: relative;
+}
+
+nav ul li i.fa-angle-down {
+  font-size: 15px;
+  font-weight: 900;
+  color: #535d67;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+nav ul:first-of-type li:last-of-type {
+  border: none;
+}
+
+nav ul ul {
+  margin-left: 25px;
+  display: none;
+}
+
+nav ul ul li {
+  border: none;
+  padding: 6px 0;
+  color: #a0aab3;
+}
+
+nav p {
+  color: #535d67;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgrey;
+}
+
+nav aside:nth-of-type(3) {
+  padding-bottom: 5px;
+}
+
+nav aside:nth-of-type(3) p:first-of-type, nav aside:nth-of-type(3) p:last-of-type,
+nav aside:nth-of-type(3) + p {
+  border: none;
+}
+
+nav aside:nth-of-type(3) p {
+  font-size: 13px;
+}
+
+nav p i.fa {
+  color: #a641dc;
+  padding-right: 10px;
+  font-size: 16px;
+}
+
+nav aside:nth-of-type(3) + p {
+  padding: 5% 8% 10%;
+}
+
+nav i.fa-bars {
+  color: #a641dc;
+  position: absolute;
+  top: 25px;
+  right: -50px;
+  font-size: 26px;
+}
+
+.small {
+  margin-left: 300px;
+}
+
+main {
+  width: 100vw;
+  padding: 40px 7%;
+  box-sizing: border-box;
+}
+
+main header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 5px solid #a641dc;
+  font-size: 11px;
+}
+
+main header h1 {
+  transition: 250ms all ease-in-out;
+  color: #3D4449;
+}
+
+main header h1 span {
+  font-weight: 400;
+  transition: 250ms all ease-in-out;
+  color: #869199;
+}
+
+main header h1:hover, main header h1:hover span, main header div i.fa:hover {
+  color: #a641dc;
+}
+
+main header div i.fa {
+  padding: 5px;
+  font-size: 20px;
+}
+
+main section.one {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 100px 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+main section.one aside {
+  width: 70%;
+}
+
+main section.one aside h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 3.5vw;
+  color: #3D4449;
+}
+
+main section.one aside p:first-of-type {
+  padding: 5px 0;
+  letter-spacing: 1.5px;
+}
+
+main section.one aside p:last-of-type {
+  width: 90%;
+  padding: 10px 0 60px;
+  font-size: 14px;
+}
+
+main section.one img {
+  width: 50%;
+  height: 400px;
+  border-radius: 5px;
+}
+
+main section.two {
+  padding: 60px 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+main section.two div.parent {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+main section.two div.parent div {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 50%;
+  padding-bottom: 35px;
+}
+
+main section.two div.parent div i.fa {
+  font-size: 40px;
+  color: #a641dc;
+  padding: 0 60px 0 50px;
+  position: relative;
+}
+
+main section.two div.parent div i.fa-diamond {
+  padding-right: 55px;
+}
+
+main section.two div.parent div i::after {
+  content: "";
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 40px;
+  position: absolute;
+  top: -20px;
+  left: 33px;
+  -webkit-transform: rotateZ(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotateZ(45deg);
+}
+
+main section.two div.parent div aside {
+  width: 75%;
+}
+
+main section.two div.parent div aside h4 {
+  color: #3D4449;
+}
+
+main section.three {
+  padding: 60px 0;
+}
+
+main section.three div.parent {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+main section.three div.parent div.inner {
+  width: 45%;
+  padding: 50px 0 0;
+}
+
+main section.three div.parent div.inner:nth-of-type(odd) {
+  border-bottom: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+}
+
+main section.three div.parent div.inner:nth-of-type(even) {
+  border-bottom: 1px solid lightgrey;
+  padding-left: 9.9%;
+}
+
+main section.three div.parent div.inner div {
+  width: 75%;
+  padding-bottom: 50px;
+}
+
+main section.three div.parent div.inner div h4 {
+  color: #3D4449;
+}
+
+main section.three div.parent div.inner div a.btn {
+  margin-top: 50px 0;
+}
